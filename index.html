@@ -1,102 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web-Studio-Main (Version-5.0)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
   </head>
   <body>
     <!-- main page of project -->
     <header class="page-header">
       <nav class="main-nav container">
-        <div class="menu-nav__container" data-menu>
-          <ul class="menu-nav list">
-            <li class="menu-nav__item">
-              <a
-                class="menu-nav__link menu-nav__link--location active"
-                href="./index.html"
-                rel="noreferrer nofollow noopener"
-              >
-                Studio
-              </a>
-            </li>
-            <li class="menu-nav__item">
-              <a
-                class="menu-nav__link menu-nav__link--location"
-                href=""
-                rel="noreferrer nofollow noopener"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li class="menu-nav__item">
-              <a
-                class="menu-nav__link menu-nav__link--location"
-                href=""
-                rel="noreferrer nofollow noopener"
-              >
-                Contacts
-              </a>
-            </li>
-          </ul>
-          <div class="menu-nav__container--position">
-            <ul class="menu-nav--contact-position list">
-              <li class="menu-nav__item">
-                <a
-                  class="menu-nav__link contact link-mail"
-                  href="mailto:info@devstudio.com"
-                >
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="menu-nav__item">
-                <a
-                  class="menu-nav__link contact link-phone"
-                  href="tel:+11000111111"
-                >
-                  +11 (000) 111-11-11
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a class="logo" href="./index.html" rel="noreferrer nofollow noopener">
-          <p>
-            <span class="logo--color-activity"> Web </span>
-            Studio
-          </p>
-        </a>
+        <a class="logo" href="./index.html"> WebStudio </a>
+        <ul class="menu-nav list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link active" href="">Studio</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="">Portfolio</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="">Contacts</a>
+          </li>
+        </ul>
       </nav>
+      <address>
+        <ul class="menu-nav--contact-position list">
+          <li class="menu-nav__item">
+            <a class="contact link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="contact link-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
     </header>
+
     <main>
       <!-- Hero -->
       <section class="hero section--position">
         <div class="container hero__container">
           <div class="hero--style">
-            <h1 class="hero__title">
-              Effective Solutions<br />for Your Business
-            </h1>
+            <h1 class="hero__title">Effective Solutions for Your Business</h1>
             <button class="standartButtom" data-modal-open type="button">
               Order Service
             </button>
           </div>
         </div>
       </section>
+
       <!-- our advantages -->
       <section class="adventages section--position">
         <div class="container">
+          <h2 class="section__title visually-hidden">Advantages</h2>
           <ul class="advantages__list list">
             <li class="item advantages__item">
-              <!-- <div class="advantages__icon">
-                            <svg class="icon icon-clock"><use href="./images/icons/icon.svg#icon-clock"></use></svg>
-                        </div> -->
               <h3 class="advantages__title">Strategy</h3>
               <p class="advantages--description">
                 Our goal is to identify the business problem to walk away with
@@ -104,9 +66,6 @@
               </p>
             </li>
             <li class="item advantages__item">
-              <!-- <div class="advantages__icon">
-                            <svg class="icon icon-clock"><use href="./images/icons/icon.svg#icon-clock"></use></svg>
-                        </div> -->
               <h3 class="advantages__title">Punctuality</h3>
               <p class="advantages--description">
                 Bring the key message to the brand's audience for the best price
@@ -114,9 +73,6 @@
               </p>
             </li>
             <li class="item advantages__item">
-              <!-- <div class="advantages__icon">
-                            <svg class="icon icon-diagram"><use href="./images/icons/icon.svg#icon-diagram"></use></svg>
-                        </div> -->
               <h3 class="advantages__title">Diligence</h3>
               <p class="advantages--description">
                 Research and confirm brands with the strongest digital growth
@@ -124,9 +80,6 @@
               </p>
             </li>
             <li class="item advantages__item">
-              <!-- <div class="advantages__icon">
-                            <svg class="icon icon-astronaut"><use href="./images/icons/icon.svg#icon-astronaut"></use></svg>
-                        </div> -->
               <h3 class="advantages__title">Technologies</h3>
               <p class="advantages--description">
                 Design practice focused on digital experiences. We bring forth a
@@ -136,6 +89,7 @@
           </ul>
         </div>
       </section>
+
       <!-- our team -->
       <section class="team section--position">
         <div class="container">
@@ -144,110 +98,59 @@
             <li class="item team__item">
               <div class="team__card">
                 <img
-                  src="images/team/product-designer_450.jpg"
+                  src="./images/team/product_designer_1x.jpg"
                   alt="Product Designer"
-                  srcset="
-                    images/team/product_designer_1x.jpg,
-                    images/team/product_designer_2x.jpg 2x,
-                    images/team/product_designer_3x.jpg 3x
-                  "
-                  loading="lazy"
-                  width="264"
-                  height="260"
-                />
-                <div class="team__card--style">
-                  <p class="team--member">Mark Guerrero</p>
-                  <p class="team--position">Product Designer</p>
-                </div>
+                  width="264">
+                <h3 class="team--member">Mark Guerrero</h3>
+                <p class="team--position">Product Designer</p>
               </div>
             </li>
             <li class="item team__item">
               <div class="team__card">
                 <img
-                  src="images/team/frontend_developer_1x.jpg"
+                  src="./images/team/frontend_developer_1x.jpg"
                   alt="Frontend Developer"
-                  srcset="
-                    images/team/frontend_developer_1x.jpg,
-                    images/team/frontend_developer_2x.jpg 2x,
-                    images/team/frontend_developer_3x.jpg 3x
-                  "
-                  loading="lazy"
-                  width="264"
-                  height="260"
-                />
-                <div class="team__card--style">
-                  <p class="team--member">Tom Ford</p>
-                  <p class="team--position">Frontend Developer</p>
-                </div>
+                  width="264">
+                <h3 class="team--member">Tom Ford</h3>
+                <p class="team--position">Frontend Developer</p>
               </div>
             </li>
             <li class="item team__item">
               <div class="team__card">
                 <img
-                  src="images/team/marketing_1x.jpg"
+                  src="./images/team/marketing_1x.jpg"
                   alt="Marketing"
-                  srcset="
-                    images/team/marketing_1x.jpg,
-                    images/team/marketing_2x.jpg 2x,
-                    images/team/marketing_3x.jpg 3x
-                  "
-                  loading="lazy"
-                  width="264"
-                  height="260"
-                />
-                <div class="team__card--style">
-                  <p class="team--member">Camila Garcia</p>
-                  <p class="team--position">Marketing</p>
-                </div>
+                  width="264">
+                <h3 class="team--member">Camila Garcia</h3>
+                <p class="team--position">Marketing</p>
               </div>
             </li>
             <li class="item team__item">
               <div class="team__card">
                 <img
-                  src="images/team/ui_designer_1x.jpg"
+                  src="./images/team/ui_designer_1x.jpg"
                   alt="UI Designer"
-                  srcset="
-                    images/team/ui_designer_1x.jpg,
-                    images/team/ui_designer_2x.jpg 2x,
-                    images/team/ui_designer_3x.jpg 3x
-                  "
-                  loading="lazy"
-                  width="264"
-                  height="260"
-                />
-                <div class="team__card--style">
-                  <p class="team--member">Daniel Wilson</p>
-                  <p class="team--position">UI Designer</p>
-                </div>
+                  width="264">
+                <h3 class="team--member">Daniel Wilson</h3>
+                <p class="team--position">UI Designer</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container footer-container">
         <div class="footer__tablet--container">
           <div class="footer__column1 column">
-            <div class="footer__logo">
-              <a
-                class="logo"
-                href="./index.html"
-                rel="noreferrer nofollow noopener"
-                ><p>
-                  <span class="logo--color-activity">Web</span
-                  ><span class="logo--color-primary">Studio</span>
-                </p></a
-              >
-            </div>
+            <a class="logo" href="./index.html"> WebStudio </a>
             <p>
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
             </p>
           </div>
-          <div class="footer__column2 column"></div>
         </div>
-        <div class="footer__column3 column"></div>
       </div>
     </footer>
   </body>
